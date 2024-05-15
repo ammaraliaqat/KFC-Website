@@ -1,0 +1,544 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    background-color: white;
+    width: 5px;
+    height: 5px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background-color: gray;
+}
+
+body{
+    background: #000;
+}
+
+header{
+    width: 90%;
+    margin: auto;
+}
+
+.icon{
+    color: white;
+    font-size: 40px;
+}
+
+ header .left  .right{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left{
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+ 
+.delivery{
+    border: solid red 1px ;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+
+}
+
+.d-img {
+    padding: 5px;
+
+}
+
+.d-text{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-right: 6px;
+
+}
+
+.pickup{
+    display: flex;
+    align-items: center;
+    background-color: #1c1816;
+    width: 130px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+
+
+.p-text{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.right, .b-img{
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: centers;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bucket{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #000;
+}
+
+.number{
+    position: absolute;
+    top: 40%;
+    left:40%;
+    transform: translate(-40%-40%);
+    font-weight: bolder;
+    
+
+}
+
+button{
+    width: 100PX;
+    height: 40PX;
+    font-weight: bolder;
+    color: white;
+    background-color: RED;
+    border:0;
+    border-radius: 10PX;
+    margin-left: 10px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.front{
+    background-image: url(https://www.kfcpakistan.com/images/687484a0-6201-11ee-8ac0-c317b31d38fe-995x356-_desktop_image-2023-10-03152748.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation:slider 12s infinite linear;
+}
+
+@keyframes slider{
+    0%{background-image: url('https://www.kfcpakistan.com/images/687484a0-6201-11ee-8ac0-c317b31d38fe-995x356-_desktop_image-2023-10-03152748.jpg'); }
+
+    35%{ background-image:url('https://www.kfcpakistan.com/images/b527b2b0-87a7-11ee-8f64-8969f6610645-995x356_desktop_image-2023-11-20132126.jpg'); }
+
+    75%{background-image: url('https://www.kfcpakistan.com/images/f1acdda0-59fd-11ee-a4e7-0f2333d7579a-Midnightdeal-3-WEB_desktop_image-2023-09-23104251.jpg'); }
+
+    100%{background-image:  url('https://www.kfcpakistan.com/images/a964cda0-8a95-11ee-bce4-ad7f582fd8ec-1920x420_desktop_image-2023-11-24064949.jpg'); }
+}
+
+
+.arrow{
+    font-size: 30px;
+    color: #ea002a;
+    top:50%;
+    left: 0;
+    transform: translate(0,-50);
+    position: absolute; 
+}
+ 
+.r-arrow{
+    font-size: 30px;
+    color: #ea002a;
+    top:50%;
+    right: 0;
+    transform: translate(0,-50);
+    position: absolute;
+}
+
+
+
+
+
+.reorder button {
+    width: 50%;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    background: color #ea002a;
+    color: black;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.reorder button .a{
+    text-decoration: none;
+
+}
+  
+.explore{
+    width: 80%;
+    margin: auto;
+
+}
+
+.head{
+    padding-top: 30px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.explore hr{
+    background-color:red;
+    height: 5px;
+    margin-top: 10px;
+    width: 80px;
+    border-style: none;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+
+.items{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+}
+
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    background-color: #1c1816;
+    border-radius: 50% 50% 8px 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 20PX;
+    margin-bottom: 30px;
+    margin-top: 30px ;
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-2rem);
+}
+
+.c1-text{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.c2-text{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.c3-text{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.c4-text{
+    text-align: center;
+    font-weight: bolder;
+}
+.c5-text{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.card{
+    position: relative;
+}
+
+.dot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ea002a;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 200px;
+    background-color: black;
+}
+
+.sellers{
+    width: 80%;
+   margin: auto;
+   text-transform: uppercase;
+   display: flex;
+   flex-direction:column ;
+}
+
+
+ hr{
+
+    background-color:red;
+    height: 5px;
+    margin-top: 10px;
+    width: 80px;
+    border-style: none;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+
+.head{
+margin-top: 10px;
+}
+
+.super-items{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    overflow: scroll;
+}
+
+.s-card{
+    height: 400px;
+    width:300px;
+    margin-bottom:0px;
+    margin-top: 20px;
+    color: white;
+    background-color:#1c1816 ; 
+}
+
+.s-img{ 
+
+    overflow: hidden;
+    width: 250px;
+    align-items: center;
+
+}
+    
+ .s-text{
+    padding-left: 20px;
+    padding-top: 50px;
+
+ }
+
+
+
+ .price{
+    clip-path: polygon(100% 15%, 100% 50%, 100% 84%, 0 85%, 25% 50%, 0 14%);
+    background-color:#ea002a;
+    width: 70px;
+    height: 40px;
+    margin-left:auto;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: -2.5rem;
+ }
+
+ .blocks{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+ }
+
+ .red-block{
+    height: 20px;
+    width: 15px;
+    background-color: #ea002a;
+
+ }
+
+
+ .top{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    gap: 2rem;
+    
+
+ }
+
+ .mini-items{
+    display: flex;
+    gap: 2rem;
+     background-color: #1c1816;
+
+
+ }
+
+.daba{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 40px;
+}
+
+.left-daba{
+display: flex;
+margin: auto;
+gap: 2rem;
+
+}
+
+
+
+.right-daba{
+    display: flex;
+    margin: auto;
+    gap: 2rem;
+    
+}
+
+img{
+    border-radius: 10px;
+}
+
+.img4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: #1c1816;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.img4 p{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.img4-button button{
+    padding: 0.10rem 0.1rem;
+    width: 300px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+
+footer{
+    background-color: #1c1816;
+}
+
+.upper{
+display: flex;
+justify-content: center;
+gap: 2rem;
+align-items: center;
+margin-top:40px ;
+
+}
+
+.f-logo{
+    margin-top:20px;
+}
+
+
+.icons{
+    display: flex;
+    gap: 1.4rem;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.social{
+    background-color: white;
+    color: #000;
+    padding: 0.8rem;
+    clip-path: circle();
+    width: 40px;
+    display: flex;
+}
+
+ul{
+    margin-top: 40px;
+}
+
+.mid{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 2rem;
+}
+
+ul li {
+
+    list-style: none;
+    gap: 2rem;
+    color: white;
+    transition: all 1s;
+}
+
+li{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+ul li:hover{
+   
+    color: #ea002a;
+}
+
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: auto;
+    padding: 4rem;
+}
+
+.simple{
+    color: #ea002a;
+}
+
+.all-rights{
+
+    color: white;
+}
+
+.all-rights:hover{
+    color: #ea002a;
+}
+
+a {
+    color:white;
+    font-weight: none;
+}
+
+a:hover{
+color: #ea002a;
+}
+
+
+
+h5{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
